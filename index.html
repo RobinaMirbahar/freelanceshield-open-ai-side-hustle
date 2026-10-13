@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreelanceShield AI — Local Open-Weight Scope Creep Detector & TabPFN Cashflow Forecaster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="brand">
+      <div class="shield-logo">🛡️</div>
+      <div>
+        <div class="brand-title-row">
+          <h1>FreelanceShield AI</h1>
+          <span class="badge badge-hf">Hacktoberfest HF26 • Side Hustle</span>
+          <span class="badge badge-open">100% Local Open-Weight AI + TabPFN-3.5</span>
+        </div>
+        <p class="brand-sub">Zero-NDA-Leakage Scope Creep Detector, 1-Click Change Order Generator &amp; Tabular Invoice Risk Forecaster</p>
+      </div>
+    </div>
+
+    <div class="topbar-controls">
+      <div class="engine-selector">
+        <label for="inferenceMode">🧠 Local Inference Engine:</label>
+        <select id="inferenceMode">
+          <option value="hybrid">⚡ Browser Clause-Vector + Ollama Auto-Detect (Default)</option>
+          <option value="ollama">🦙 Local Ollama API (http://localhost:11434 • gemma4:4b / llama3.2)</option>
+          <option value="tabpfn">📊 Prior Labs TabPFN-3.5 Zero-Shot Tabular Engine</option>
+        </select>
+      </div>
+      <button id="btnRunDemoPipeline" class="btn btn-accent">✨ Auto-Run Full Audit &amp; Forecast</button>
+      <a href="https://github.com/RobinaMirbahar/freelanceshield-open-ai-side-hustle" target="_blank" rel="noopener" class="btn btn-ghost">⭐ GitHub Repo</a>
+    </div>
+  </header>
+
+  <!-- KPI Revenue Ribbon -->
+  <section class="kpi-ribbon">
+    <div class="kpi-card">
+      <span class="kpi-label">Unbilled Scope Creep Caught</span>
+      <div class="kpi-value text-emerald" id="kpiSavedRevenue">$4,650</div>
+      <span class="kpi-sub">Across 3 active client contracts this month</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-label">Scope Creep Severity Score</span>
+      <div class="kpi-value text-amber" id="kpiCreepScore">78 / 100</div>
+      <span class="kpi-sub" id="kpiCreepVerdict">🚨 High Out-of-Scope Expansion (+28 hrs)</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-label">TabPFN-3.5 Late-Payment Probability</span>
+      <div class="kpi-value text-cyan" id="kpiLateRisk">18.4%</div>
+      <span class="kpi-sub" id="kpiRiskAction">Recommend 50% Upfront Milestone Link</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-label">Cloud API Token Cost / NDA Exposure</span>
+      <div class="kpi-value text-purple">$0.00 / 0 Bytes</div>
+      <span class="kpi-sub">🔒 100% On-Device Open-Weight Execution</span>
+    </div>
+  </section>
+
+  <!-- Main 3-Column Workspace -->
+  <main class="workspace-grid">
+    <!-- COLUMN 1: SOW + Client Message Input & Scenario Presets -->
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>1. Contract SOW vs. Client Request</h2>
+          <p class="panel-subtitle">Load a real-world freelancer scenario or paste your signed Statement of Work (SOW) &amp; client Slack/email message.</p>
+        </div>
+        <span class="pill pill-privacy">🔒 Local-Only</span>
+      </div>
+
+      <div class="scenario-bar">
+        <span class="scenario-label">Try Scenario:</span>
+        <button class="chip active" data-scenario="saas">📱 "Quick Dark Mode + React Native App"</button>
+        <button class="chip" data-scenario="ai_rag">🤖 "Just Add Multi-Tenant SSO &amp; SOC2"</button>
+        <button class="chip" data-scenario="design">🎨 "5 Extra Landing Pages + Motion Video"</button>
+        <button class="chip" data-scenario="in_scope">✅ Legitimate Bug Fix (In-Scope)</button>
+      </div>
+
+      <div class="form-group">
+        <div class="label-row">
+          <label for="sowInput">📜 Signed Statement of Work (SOW) Clauses</label>
+          <span class="mono-tag">RAG Grounding Source</span>
+        </div>
+        <textarea id="sowInput" rows="7"></textarea>
+      </div>
+
+      <div class="form-group">
+        <div class="label-row">
+          <label for="clientMsgInput">💬 Incoming Client Slack / Email Message</label>
+          <span class="mono-tag">Untrusted Scope Input</span>
+        </div>
+        <textarea id="clientMsgInput" rows="5"></textarea>
+      </div>
+
+      <div class="rate-row">
+        <div class="rate-field">
+          <label for="hourlyRate">Hourly Rate ($/hr)</label>
+          <input type="number" id="hourlyRate" value="125" min="25" max="500" step="5" />
+        </div>
+        <div class="rate-field">
+          <label for="clientTier">Client History Tier</label>
+          <select id="clientTier">
+            <option value="startup_seed">Seed Startup (Net-15, 2 late invoices)</option>
+            <option value="enterprise_net45">Enterprise Procurement (Net-45)</option>
+            <option value="repeat_vip">Repeat VIP Retainer (Net-7, 0 late)</option>
+            <option value="new_unverified">New Unverified Client (No deposit)</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="btnAnalyzeScope" class="btn btn-primary btn-full">
+        🔍 Run Local Open-Weight Scope Audit &amp; TabPFN Risk Check
+      </button>
+    </section>
+
+    <!-- COLUMN 2: Clause-by-Clause Diff Radar + 1-Click Change Order Generator -->
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>2. Scope-Creep Radar &amp; Change Order</h2>
+          <p class="panel-subtitle">Semantic clause matching + automated polite counter-proposal &amp; itemised Change Order invoice.</p>
+        </div>
+        <span class="pill" id="engineStatusPill">🦙 Gemma-4-4B Local Ready</span>
+      </div>
+
+      <!-- Detected Scope Deltas -->
+      <div class="delta-list" id="deltaList"></div>
+
+      <!-- Polite Response + Change Order Box -->
+      <div class="change-order-box">
+        <div class="co-header">
+          <div>
+            <h3>📄 Auto-Drafted Change Order (#CO-2026-089)</h3>
+            <span class="co-sub" id="coSummarySub">Polite client reply + itemized scope addendum</span>
+          </div>
+          <div class="co-actions">
+            <button id="btnCopyReply" class="btn btn-xs btn-secondary">📋 Copy Reply</button>
+            <button id="btnPrintInvoice" class="btn btn-xs btn-accent">🖨️ Export Change Order PDF</button>
+          </div>
+        </div>
+        <textarea id="replyDraftOutput" rows="8"></textarea>
+      </div>
+
+      <!-- Agent Telemetry Log -->
+      <div class="telemetry-box">
+        <div class="telemetry-header">
+          <span>⚙️ Open-Source Agent Execution Trace</span>
+          <span id="telemetryTiming" class="mono-tag">18ms local</span>
+        </div>
+        <pre id="agentTraceLog" class="trace-pre"></pre>
+      </div>
+    </section>
+
+    <!-- COLUMN 3: Prior Labs TabPFN-3.5 Invoice Late-Payment & Cashflow Forecaster -->
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>3. TabPFN-3.5 Invoice Risk &amp; Cashflow</h2>
+          <p class="panel-subtitle">Zero-shot tabular foundation model predicting invoice payment delays &amp; Q4 side-hustle revenue.</p>
+        </div>
+        <span class="pill pill-tabpfn">📊 Prior Labs TabPFN</span>
+      </div>
+
+      <div class="canvas-card">
+        <div class="canvas-title-row">
+          <span>Q4 Cumulative Revenue Forecast (With vs. Without Scope Protection)</span>
+          <span class="legend-inline">
+            <i class="dot dot-emerald"></i> Protected (+Change Orders)
+            <i class="dot dot-red"></i> Unprotected (Free Creep)
+          </span>
+        </div>
+        <canvas id="cashflowCanvas" width="460" height="195"></canvas>
+      </div>
+
+      <div class="tabular-header">
+        <h3>📋 Historical + Active Invoice Ledger (TabPFN Context Table)</h3>
+        <button id="btnAddInvoiceRow" class="btn btn-xs btn-secondary">+ Simulate New Invoice</button>
+      </div>
+
+      <div class="table-scroll">
+        <table class="invoice-table">
+          <thead>
+            <tr>
+              <th>Client</th>
+              <th>Amount</th>
+              <th>Terms</th>
+              <th>Creep?</th>
+              <th>TabPFN Delay Risk</th>
+            </tr>
+          </thead>
+          <tbody id="invoiceTableBody"></tbody>
+        </table>
+      </div>
+
+      <!-- ROI Calculator for Side Hustlers -->
+      <div class="pricing-card">
+        <div class="pricing-left">
+          <span class="badge badge-open">💰 Why Freelancers Pay $19/mo</span>
+          <h4>Average Solo Dev Recovers $1,420/mo in Unbilled Hours</h4>
+          <p>Runs 100% locally via Ollama (`gemma4:4b`) + `tabpfn` or self-hosted on Render/DigitalOcean with zero NDA cloud leakage.</p>
+        </div>
+        <div class="pricing-right">
+          <div class="roi-badge" id="roiMultiplier">74x ROI</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
