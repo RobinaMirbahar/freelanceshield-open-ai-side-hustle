@@ -1,5 +1,28 @@
 # 🛡️ FreelanceShield AI — Local Open-Weight Scope Creep Detector & TabPFN-3.5 Invoice Forecaster
 
+![Local_AI](https://img.shields.io/badge/Local_AI-Open_Weights_Gemma-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Tabular_ML](https://img.shields.io/badge/Tabular_ML-TabPFN_Risk_Forecaster-0F9D58?style=for-the-badge&logo=python&logoColor=white)
+![Privacy](https://img.shields.io/badge/Privacy-100%_Local_Contracts-7C3AED?style=for-the-badge&logo=security&logoColor=white)
+![Author](https://img.shields.io/badge/Author-Robina_Mirbahar-181717?style=for-the-badge&logo=github&logoColor=white)
+
+> **Author & Architect:** [Robina Mirbahar](https://github.com/RobinaMirbahar) (Google Developer Expert in Cloud & AI)  
+> **Focus:** Local Open-Weight Scope Creep Detector, 1-Click Change Order Generator & TabPFN Invoice Risk Forecaster
+
+---
+
+## 🎯 Why I Built FreelanceShield AI (Engineering Purpose & Real-World Value)
+
+### 1. 🛡️ Protecting Independent Engineers from Unpaid Scope Creep
+Freelancers and boutique consultancies lose thousands of dollars when casual client messages quietly expand deliverables beyond the signed Statement of Work (SOW). I built FreelanceShield AI to compare incoming client requests against baseline SOW clauses automatically.
+
+### 2. 📊 Hybrid AI: Open-Weights LLM + TabPFN Tabular Risk Forecasting
+I combined local open-weights Gemma (for semantic contract diffing and 1-click Change Order drafting) with TabPFN foundation-model tabular inference to predict invoice late-payment probability.
+
+### 3. 🔒 100% Local NDA-Safe Execution
+Client contracts and pricing terms never leave your machine, ensuring strict NDA compliance.
+
+---
+
 > **Official Submission for the [DEV Hacktoberfest Open-Source AI Challenge Week 2: Side Hustle](https://dev.to/challenges/hacktoberfest-week2-2026-10-12)**  
 > **Live Interactive Web App:** **[https://robinamirbahar.github.io/freelanceshield-open-ai-side-hustle/](https://robinamirbahar.github.io/freelanceshield-open-ai-side-hustle/)**
 
@@ -98,3 +121,22 @@ MIT License — Built with ❤️ by **Robina Mirbahar** for Hacktoberfest 2026 
 <div align="center">
   <img src="https://raw.githubusercontent.com/RobinaMirbahar/RobinaMirbahar/main/ProfileImages/GithubBanner.svg" alt="Robina Mirbahar Banner" width="100%" />
 </div>
+
+<!-- AUTHOR_SIGNATURE_START -->
+---
+
+## 👩‍💻 About the Author
+
+**Robina Mirbahar — Google Cloud & AI Architect**  
+*Google Developer Expert (GDE) in Cloud & AI • Published Author • Multi-Agent Systems & Serverless GPU Builder*
+
+[![GitHub](https://img.shields.io/badge/GitHub-RobinaMirbahar-181717?style=for-the-badge&logo=github)](https://github.com/RobinaMirbahar)
+[![Medium](https://img.shields.io/badge/Medium-@robinamirbahar-000000?style=for-the-badge&logo=medium)](https://medium.com/@robinamirbahar)
+[![DEV.to](https://img.shields.io/badge/DEV.to-robinamirbahar-0A0A0A?style=for-the-badge&logo=devdotto)](https://dev.to/robinamirbahar)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Robina_Mirbahar-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/robina-mirbahar)
+[![GDE Profile](https://img.shields.io/badge/Google_Developer_Expert-Profile-4285F4?style=for-the-badge&logo=google)](https://g.dev/RobinaMirbahar)
+[![YouTube](https://img.shields.io/badge/YouTube-@RobinaMirbahar-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RobinaMirbahar)
+[![X](https://img.shields.io/badge/X-@RobinaMirbahar-000000?style=for-the-badge&logo=x)](https://x.com/RobinaMirbahar)
+[![Amazon Author](https://img.shields.io/badge/Amazon_Book-Cloud_Computing_Voyage-FF9900?style=for-the-badge&logo=amazon)](https://www.amazon.com/dp/B0D146249R)
+
+<!-- AUTHOR_SIGNATURE_END -->
