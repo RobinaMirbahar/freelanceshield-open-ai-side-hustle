@@ -140,3 +140,8 @@ MIT License — Built with ❤️ by **Robina Mirbahar** for Hacktoberfest 2026 
 [![Amazon Author](https://img.shields.io/badge/Amazon_Book-Cloud_Computing_Voyage-FF9900?style=for-the-badge&logo=amazon)](https://www.amazon.com/dp/B0D146249R)
 
 <!-- AUTHOR_SIGNATURE_END -->
+
+---
+
+### Official Google Developer Resources
+- [Google Gemma Open Models Documentation](https://ai.google.dev/gemma?utm_campaign=deveco_gdemembers&utm_source=deveco)
