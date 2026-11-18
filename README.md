@@ -6,8 +6,8 @@
 ![Author](https://img.shields.io/badge/Author-Robina_Mirbahar-181717?style=for-the-badge&logo=github&logoColor=white)
 
 > **Author & Architect:** [Robina Mirbahar](https://github.com/RobinaMirbahar) ([Google Developer Expert in Cloud & AI](https://developers.google.com/profile/u/106918534005910641104?utm_campaign=deveco_gdemembers&utm_source=deveco) · Google Cloud Champion Innovator · Co-Author of [*AI Engineering*](https://www.amazon.com/dp/B0GWCZWCF4))  
-> 📚 **Companion Publications:** [DEV.to Featured Article](https://dev.to/robinamirbahar/freelanceshield-ai-local-open-weight-scope-creep-detector-tabpfn-invoice-risk-forecaster-83k) · [Live Web App](https://robinamirbahar.github.io/freelanceshield-open-ai-side-hustle/)  
-> **Focus:** Local Open-Weight Scope Creep Detector, 1-Click Change Order Generator & TabPFN Invoice Risk Forecaster
+> 📚 **Companion Publications:** [DEV.to Featured Article](https://dev.to/robinamirbahar/freelanceshield-ai-local-open-weight-scope-creep-detector-tabpfn-invoice-risk-forecaster-83k) · [Live Web App](https://robinamirbahar.github.io/freelanceshield-open-ai-side-hustle/) · Hacktoberfest Week 2 (*Side Hustle*)  
+> **Core Stack:** Local Open-Weights [Google Gemma](https://ai.google.dev/gemma?utm_campaign=deveco_gdemembers&utm_source=deveco), TabPFN Tabular Foundation Model, 1-Click PDF Change-Order Engine, and Privacy-First Edge Inference.
 
 ---
 
